@@ -2,11 +2,6 @@ import type { Ref, ShallowRef, WritableComputedRef } from 'vue'
 export { type Options, type SortableEvent } from 'sortablejs'
 
 /**
- * @deprecated Use MaybeRef<T> instead
- */
-export type RefOrValue<T> = T | Ref<T>
-
-/**
  * copied from vueuse: https://github.com/vueuse/vueuse/blob/main/packages/shared/tryOnUnmounted/index.ts
  * Maybe it's a ref, or a plain value.
  */
